@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.bf741a51.css",
+    "main.js": "/static/js/main.c04f36ae.js",
+    "static/js/787.7a92c185.chunk.js": "/static/js/787.7a92c185.chunk.js",
+    "static/media/sn.svg": "/static/media/sn.528543caae2adbd318d8.svg",
+    "static/media/rn.svg": "/static/media/rn.dfa06420eea6da34ec40.svg",
+    "static/media/rd.svg": "/static/media/rd.674b01de159bc7519fe0.svg",
+    "static/media/md.svg": "/static/media/md.015bf4c99284c0d74b02.svg",
+    "static/media/bcn.svg": "/static/media/bcn.79215d4bdacfb1596afa.svg",
+    "static/media/sr.svg": "/static/media/sr.0dc8335e1b7493bf52c6.svg",
+    "static/media/bcd.svg": "/static/media/bcd.2c6df5426dfedc7e945a.svg",
+    "static/media/fcn.svg": "/static/media/fcn.7c7c3446f71d6776edbc.svg",
+    "static/media/humidity.svg": "/static/media/humidity.764c599eb3217ae1e79e.svg",
+    "static/media/fcd.svg": "/static/media/fcd.22af82f41162d6ba6559.svg",
+    "static/media/thermometer.svg": "/static/media/thermometer.050919f99a2e91b11c4d.svg",
+    "static/media/td.svg": "/static/media/td.b376eb3bc79f73c3c6a9.svg",
+    "static/media/wind.svg": "/static/media/wind.9c6497960fb7f3c732a0.svg",
+    "static/media/cn.svg": "/static/media/cn.35d2d7e81aaa60a01555.svg",
+    "static/media/cd.svg": "/static/media/cd.f1148f358aa1e13bee23.svg",
+    "static/media/sc.svg": "/static/media/sc.8a5788db9979257e9e7f.svg",
+    "index.html": "/index.html",
+    "main.bf741a51.css.map": "/static/css/main.bf741a51.css.map",
+    "main.c04f36ae.js.map": "/static/js/main.c04f36ae.js.map",
+    "787.7a92c185.chunk.js.map": "/static/js/787.7a92c185.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bf741a51.css",
+    "static/js/main.c04f36ae.js"
+  ]
+}
