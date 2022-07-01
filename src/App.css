@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDGothic&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'BIZ UDGothic', sans-serif;
+}
+
+p{
+  font-size: 1.4rem;
+  color: #FFF;
+}
+
+h1{
+  font-size: 6rem;
+  color: #FFF;
+}
+
+h2{
+  font-size: 3rem;
+  color: #FFF;
+}
+
+.container-bg{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.containerRandom{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.top{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100%;
+  max-width: 768px;
+  padding: 20px 10px 20px 10px;
+  position:relative; 
+}
+
+.top .input{
+  padding: 15px;
+  width: 100%;
+  margin: auto;
+  border: 1px solid lightgray;
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: lightgray;
+}
+
+.top .input:focus{
+  outline: none;
+}
+
+.welcome{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  max-width: 500px;
+  text-align: center;
+}
+
+.mid{
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mid .name{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.mid .name span{
+  font-size: 1.5rem;
+  color: #FFF;
+}
+
+.mid .temp{
+  padding: 10px 10px 0 10px;
+}
+
+.mid .description{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mid .description p{
+  text-transform: capitalize;
+  font-size: 2rem;
+}
+
+.mid .temp{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 2s ease-out;
+}
+
+.mid .weatherIcon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 400px;
+  min-height: 300px;
+}
+
+.cd, .cn, .fcd, .fcn, .scd, .scn, .bcd, .bcn,
+.srd, .srn, .rd, .rn, .td, .tn, .sd, .sn, .md, .mn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  position: inherit;
+  background-repeat: no-repeat;
+  background-size: 400px 400px;
+  background-position: center;
+  transition: 2s ease-out;
+}
+
+.cd{
+  background-image: url('./images/cd.svg');
+}
+.cn{
+  background-image: url('./images/cn.svg');
+}
+.fcd{
+  background-image: url('./images/fcd.svg');
+}
+.fcn{
+  background-image: url('./images/fcn.svg');
+}
+.scd, .scn{
+  background-image: url('./images/sc.svg');
+}
+.bcd{
+  background-image: url('./images/bcd.svg');
+}
+.bcn{
+  background-image: url('./images/bcn.svg');
+}
+.srd, .srn{
+  background-image: url('./images/sr.svg');
+}
+.rd{
+  background-image: url('./images/rd.svg');
+}
+.rn{
+  background-image: url('./images/rn.svg');
+}
+.td, .tn{
+  background-image: url('./images/td.svg');
+}
+.sd.sn{
+  background-image: url('./images/sn.svg');
+}
+.md{
+  background-image: url('./images/md.svg');
+}
+.mn{
+  background-image: url('./images/md.svg');
+}
+
+.bottom{
+  width: 100%;
+  padding: 10px 10px 20px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottom .fLike, .humidity, .wind{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.bottom .fLike span{
+  background-image: url('./images/thermometer.svg');
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 45px;
+  background-repeat: no-repeat;
+  background-size: 64px 64px;
+  background-position: center;
+}
+
+.bottom .humidity span{
+  background-image: url('./images/humidity.svg');
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 45px;
+  background-repeat: no-repeat;
+  background-size: 64px 64px;
+  background-position: center;
+}
+
+.bottom .wind span{
+  background-image: url('./images/wind.svg');
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 45px;
+  background-repeat: no-repeat;
+  background-size: 64px 64px;
+  background-position: center;
+}
+
+.container .msgError{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container .msgError p{
+  color: red;
+  font-size: 1.8rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.container .copy{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
+}
+
+.container .copy p{
+  color: #FFF;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.container .copy a{
+  color: #FFF;
+  text-decoration: none;
+}
+
+@media (max-width: 425px){
+  .container{
+    width: 90%;
+  }
+  p{
+    font-size: 1rem;
+  }
+  
+  h1{
+    font-size: 5rem;
+  }
+  
+  h2{
+    font-size: 2rem;
+  }
+  .top .input{
+    width: 90%;
+  }
+  .mid .weatherIcon{
+    min-height: 250px;
+  }
+  .mid .description p{
+    font-size: 1.5rem;
+  }
+  .cd, .cn, .fcd, .fcn, .scd, .scn, .bcd, .bcn,
+.srd, .srn, .rd, .rn, .td, .tn, .sd, .sn, .md, .mn{
+  background-size: 80% 80%;
+  }
+  .bottom{
+    width: 90%;
+  }
+
+}
+
+@media (max-height: 600px){
+  p{
+    font-size: 1rem;
+  }
+  
+  h1{
+    font-size: 4rem;
+  }
+  
+  h2{
+    font-size: 1.5rem;
+  }
+  .mid .weatherIcon{
+    min-height: 250px;
+  }
+  .cd, .cn, .fcd, .fcn, .scd, .scn, .bcd, .bcn,
+.srd, .srn, .rd, .rn, .td, .tn, .sd, .sn, .md, .mn{
+  background-size: 90% 90%;
+  }
+  .mid .description p{
+    font-size: 1.5rem;
+  }
+}
