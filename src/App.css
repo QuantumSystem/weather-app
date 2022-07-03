@@ -39,6 +39,7 @@ h2{
   display: flex;
   flex-direction: column;
   height: 100vh;
+  width: 400px;
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
@@ -129,8 +130,8 @@ h2{
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 400px;
-  min-height: 300px;
+  width: 100%;
+  height: 300px;
 }
 
 .cd, .cn, .fcd, .fcn, .scd, .scn, .bcd, .bcn,
@@ -142,7 +143,7 @@ h2{
   width: 100%;
   position: inherit;
   background-repeat: no-repeat;
-  background-size: 400px 400px;
+  /* background-size: 400px 400px; */
   background-position: center;
   transition: 2s ease-out;
 }
@@ -273,16 +274,13 @@ h2{
   text-decoration: none;
 }
 
-@media (max-width: 425px){
-  .container{
-    width: 90%;
-  }
+@media screen and (max-width: 425px){
   p{
     font-size: 1rem;
   }
   
   h1{
-    font-size: 5rem;
+    font-size: 3.5rem;
   }
   
   h2{
@@ -292,14 +290,15 @@ h2{
     width: 90%;
   }
   .mid .weatherIcon{
-    min-height: 250px;
+    width: 100%;
+    height: 100%;
   }
   .mid .description p{
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   .cd, .cn, .fcd, .fcn, .scd, .scn, .bcd, .bcn,
 .srd, .srn, .rd, .rn, .td, .tn, .sd, .sn, .md, .mn{
-  background-size: 80% 80%;
+  background-size: 100% 100%;
   }
   .bottom{
     width: 90%;
@@ -307,26 +306,33 @@ h2{
 
 }
 
-@media (max-height: 600px){
+@media screen and (max-height: 770px){
   p{
     font-size: 1rem;
   }
   
   h1{
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
   
   h2{
-    font-size: 1.5rem;
+    font-size: 2rem;
+  }
+  .top .input{
+    width: 90%;
   }
   .mid .weatherIcon{
-    min-height: 250px;
+    width: 100%;
+    height: 100%;
+  }
+  .mid .description p{
+    font-size: 1rem;
   }
   .cd, .cn, .fcd, .fcn, .scd, .scn, .bcd, .bcn,
 .srd, .srn, .rd, .rn, .td, .tn, .sd, .sn, .md, .mn{
-  background-size: 90% 90%;
+  background-size: 100% 100%;
   }
-  .mid .description p{
-    font-size: 1.5rem;
+  .bottom{
+    width: 90%;
   }
 }

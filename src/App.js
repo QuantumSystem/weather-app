@@ -9,7 +9,7 @@ function App() {
   const apiKey = '5a381863b38a92047958619972b11522'
   const [weatherData, setWeatherData] = useState([{}])
   const [city, setCity] = useState("")
-  const [clima, setClima] = useState('')
+  const [clima, setClima] = useState('sunny')
   moment.locale('pt-br')
   const now = moment();
 
