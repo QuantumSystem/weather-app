@@ -104,6 +104,10 @@ h2{
   color: #FFF;
 }
 
+.mid .name h2{
+  text-align: center;
+}
+
 .mid .temp{
   padding: 10px 10px 0 10px;
 }
